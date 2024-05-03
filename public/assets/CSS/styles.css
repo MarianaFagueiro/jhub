@@ -1,0 +1,63 @@
+.logo{ 
+    transform: scale(0.3);
+    margin-left: -20%;
+}
+
+.navbar{
+    height: 150px;
+}
+
+.navbar-nav{
+    margin-left: -30%;
+    margin-top: -5px;
+}
+
+.nav-link{
+    color: #3944B9;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    color: #3944B9; 
+}
+
+.navbar-nav .nav-item .nav-link.active:hover {
+    color: #007bff; 
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #007bff; 
+}
+
+
+@media (max-width: 991.98px) {
+    .navbar-toggler {
+        position: absolute;
+        top: 85px; /* Ajuste o valor conforme necessário */
+        right: 30px; /* Ajuste o valor conforme necessário */
+        z-index: 2000; /* Garante que o botão hamburguer esteja acima do menu */
+    }
+    .navbar-collapse {
+        position: fixed;
+        top: 120px; /* Ajuste o valor conforme necessário */
+        right: -200px; /* Esconde o menu à direita */
+        bottom: 0;
+        background-color: #f8f9fa; /* Ajuste a cor de fundo conforme necessário */
+        border-radius: 5px; /* Arredonda as bordas */
+        padding: 10px; /* Adiciona um espaço interno */
+        width: 200px; /* Defina a largura do menu */
+        text-align: right; /* Alinha os itens do menu à direita */
+        z-index: 1000; /* Garante que o menu esteja acima do conteúdo */
+        transition: right 0.3s ease; /* Adiciona uma transição suave ao mover o menu */
+    }
+    .navbar-collapse.show {
+        right: 0; /* Move o menu para a esquerda quando aberto */
+    }
+
+    .nav-link, nav-link activate{
+      margin-right: 30px;
+      color: mediumblue;
+    }
+}
+  
+  
