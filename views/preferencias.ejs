@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/CSS/preferencias.css">
+
+    <title>Preferências</title>
+</head>
+<body>
+    <%- include('navbar.ejs') %>
+
+    <main> 
+        <h1 style="color: #505AC1; text-align: center; font-weight: bold; margin-top: 30px;"> Personalize seu feed de notícias</h1>
+        <h2 style="color: #505AC1; text-align: center;">Selecione os assuntos que te interessam</h2>
+        <div class="list-group" style="margin: 60px;">
+            <div class="row">
+              <div class="col">
+                <label class="list-group-item" style="background-color: #0a4020c7; color: antiquewhite; border-radius: 10px; margin-block: 10px">
+                  <input class="form-check-input me-1" type="checkbox" value="">
+                  Esporte
+                </label>
+              </div>
+              <div class="col">
+                <label class="list-group-item" style="background-color: #bd2020cb; color: antiquewhite; border-radius: 10px; margin-block: 10px">
+                  <input class="form-check-input me-1" type="checkbox" value="">
+                  Educação
+                </label>
+              </div>
+              <div class="col">
+                <label class="list-group-item" style="background-color: #3944b9e9; color: antiquewhite; border-radius: 10px; margin-block: 10px">
+                  <input class="form-check-input me-1" type="checkbox" value="">
+                  Business
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label class="list-group-item" style="background-color: #2762FC; color: antiquewhite; border-radius: 10px; margin-block: 10px">
+                  <input class="form-check-input me-1" type="checkbox" value="">
+                  Política
+                </label>
+              </div>
+              <div class="col">
+                <label class="list-group-item" style="background-color: #BD71B1; color: antiquewhite; border-radius: 10px; margin-block: 10px">
+                  <input class="form-check-input me-1" type="checkbox" value="">
+                  Tecnologia
+                </label>
+              </div>
+              <div class="col">
+                <label class="list-group-item" style="background-color: #574f06c2; color: antiquewhite; border-radius: 10px; margin-block: 10px">
+                  <input class="form-check-input me-1" type="checkbox" value="">
+                  Startup
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label class="list-group-item" style="background-color: #F4AC69; color: antiquewhite; border-radius: 10px; margin-block: 10px">
+                  <input class="form-check-input me-1" type="checkbox" value="">
+                  Cultura
+                </label>
+              </div>
+              <div class="col">
+                <label class="list-group-item" style="background-color: #50A6A1; color: antiquewhite; border-radius: 10px; margin-block: 10px">
+                  <input class="form-check-input me-1" type="checkbox" value="">
+                  Marketing
+                </label>
+              </div>
+              <div class="col">
+                <label class="list-group-item" style="background-color: #a6a906d1; color: antiquewhite; border-radius: 10px; margin-block: 10px;">
+                  <input class="form-check-input me-1" type="checkbox" value="">
+                  Música
+                </label>
+              </div>
+            </div>
+          </div>
+              
+                <input class="btn btn-primary" type="submit" value="Enviar" style="margin-left:50%;">
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <p>DESCUBRA A JHUB:</p>
+              <p>Bem vindo ao seu hub de notícias <br> que personaliza os assuntos<br> que você se interessa e coloca em um único lugar</p>
+            </div>
+            <div class="col-md-5">
+              <p>FAÇA O SEU JHUB:</p>
+              <p> Escolha os tópicos <br> que te interressam e aproveite!</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+</body>
+</html>

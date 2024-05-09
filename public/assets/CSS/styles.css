@@ -7,6 +7,10 @@
     height: 150px;
 }
 
+.navbar-toggler .navbar-toggler-icon {
+    color: #3944B9 !important;  /* Define a cor desejada para o ícone */
+}
+
 .navbar-nav{
     margin-left: -30%;
     margin-top: -5px;
@@ -54,7 +58,7 @@
         right: 0; /* Move o menu para a esquerda quando aberto */
     }
 
-    .nav-link, nav-link activate{
+    .nav-link, nav-link.activate{
       margin-right: 30px;
       color: mediumblue;
     }
