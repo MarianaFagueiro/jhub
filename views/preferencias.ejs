@@ -79,6 +79,23 @@
                 <input class="btn btn-primary" type="submit" value="Enviar" style="margin-left:50%;">
     </main>
 
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          document.querySelector('.btn-primary').addEventListener('click', function(event) {
+              var selectedTopics = document.querySelectorAll('input[type=checkbox]:checked').length;
+              
+              if (selectedTopics < 3) {
+                  event.preventDefault(); // Evita que o formulário seja enviado
+                  alert('Por favor, selecione pelo menos 3 tópicos.');
+              } else {
+                  window.location.href = 'feed';
+              }
+          });
+      });
+  </script>
+  
+  
+
     <footer class="footer">
         <div class="container">
           <div class="row">

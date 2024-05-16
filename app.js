@@ -2,14 +2,10 @@ const express = require('express');
 const app = express();
 
 app.use(express.static('public'));
-
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-    res.redirect('/index');
-});
-
-app.get('/index', (req, res) => { 
+    // Renderiza a página index quando acessa a rota principal
     res.render('index');
 });
 
@@ -25,11 +21,9 @@ app.get('/test', (req, res) => {
     console.log('Servidor iniciado.');
 });
 
-app.listen(9000, () => {
-    console.log('Servidor iniciado.');
+app.listen(3000, () => {
+    console.log('Servidor iniciado na porta 3000');
 });
-
-
 
 
 

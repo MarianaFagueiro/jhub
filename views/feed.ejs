@@ -13,6 +13,7 @@
     <h1 style="color:#3944B9;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; margin-top: 3%; margin-left: 6%;">Hoje</h1>
     <h2 style="color: #3944B9; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; margin-left: 6%;"> Tecnologia</h2><br>
 
+
     <div class="card mb-3" style="max-width: 90%; margin-left: 6%;">
         <div class="row g-0">
           <div class="col-md-4">
@@ -521,6 +522,22 @@
           </div>
         </div>
       </div> 
+
+      <script>
+        document.getElementById('selecionadas').addEventListener('change', function() {
+            var selecionadas = this.selectedOptions;
+            var todasAsSecoes = document.querySelectorAll('div[id]');
+            
+            for (var i = 0; i < todasAsSecoes.length; i++) {
+                var secao = todasAsSecoes[i];
+                if (selecionadas.namedItem(secao.id)) {
+                    secao.classList.remove('hidden');
+                } else {
+                    secao.classList.add('hidden');
+                }
+            }
+        });
+    </script>
 
       <footer class="footer">
         <div class="container">
