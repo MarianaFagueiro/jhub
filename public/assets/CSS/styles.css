@@ -8,7 +8,7 @@
 }
 
 .navbar-toggler .navbar-toggler-icon {
-    color: #3944B9 !important;  /* Define a cor desejada para o ícone */
+    color: #3944B9 !important; 
 }
 
 .navbar-nav{
@@ -37,25 +37,25 @@
 @media (max-width: 991.98px) {
     .navbar-toggler {
         position: absolute;
-        top: 85px; /* Ajuste o valor conforme necessário */
-        right: 30px; /* Ajuste o valor conforme necessário */
-        z-index: 2000; /* Garante que o botão hamburguer esteja acima do menu */
+        top: 85px; 
+        right: 30px; 
+        z-index: 2000; 
     }
     .navbar-collapse {
         position: fixed;
-        top: 120px; /* Ajuste o valor conforme necessário */
-        right: -200px; /* Esconde o menu à direita */
+        top: 120px; 
+        right: -200px; 
         bottom: 0;
-        background-color: #f8f9fa; /* Ajuste a cor de fundo conforme necessário */
-        border-radius: 5px; /* Arredonda as bordas */
-        padding: 10px; /* Adiciona um espaço interno */
-        width: 200px; /* Defina a largura do menu */
-        text-align: right; /* Alinha os itens do menu à direita */
-        z-index: 1000; /* Garante que o menu esteja acima do conteúdo */
-        transition: right 0.3s ease; /* Adiciona uma transição suave ao mover o menu */
+        background-color: #f8f9fa; 
+        border-radius: 5px; 
+        padding: 10px; 
+        width: 200px;
+        text-align: right; 
+        z-index: 1000; 
+        transition: right 0.3s ease; 
     }
     .navbar-collapse.show {
-        right: 0; /* Move o menu para a esquerda quando aberto */
+        right: 0; 
     }
 
     .nav-link, nav-link.activate{
