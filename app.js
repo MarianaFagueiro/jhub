@@ -21,7 +21,7 @@ app.get('/economia', (req, res) => {
   res.render('economia');
 });
 
-app.get('/educacao', (req, res) => {
+app.get('/educacao', (req, res) => { 
     res.render('educacao');
   });
 
